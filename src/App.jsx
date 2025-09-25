@@ -29,7 +29,7 @@ function App() {
           </p>
           <div className="flex items-center gap-5">
             <a
-              href="#"
+              href="https://docs.google.com/document/d/17Yhm4YlEfJg-skoOYXkHuHqxmf25gy5DwdUxNVw_YeY/edit?usp=sharing"
               className="bg-pink-600 p-4 rounded-2xl hover:bg-pink-500"
             >
               Download CV <i className="ri-download-fill ri-lg"></i>
