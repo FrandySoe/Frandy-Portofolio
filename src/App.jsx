@@ -1,5 +1,6 @@
 import DataImage from "./data";
 import { listProject } from "./data";
+import "aos/dist/aos.css";
 
 function App() {
   return (
@@ -52,11 +53,11 @@ function App() {
 
       {/* {Resume} */}
       <div className="about mt-32 py-10" id="resume">
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <div>
           <h1 className="text-center text-4xl font-bold mb-18">Resume</h1>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 px-1">
             {/* Contact Card */}
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <i className="ri-contacts-fill text-pink-600"></i> Contact
               </h2>
@@ -74,7 +75,7 @@ function App() {
             </div>
 
             {/* Education Card */}
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <i className="ri-graduation-cap-fill text-pink-600"></i>{" "}
                 Education
@@ -94,7 +95,7 @@ function App() {
             </div>
 
             {/* Experience Card */}
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <i className="ri-briefcase-fill text-pink-600"></i> Internship
                 Experience
@@ -112,7 +113,7 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <i className="ri-code-s-slash-line text-pink-600"></i> Skills
               </h2>
@@ -141,7 +142,7 @@ function App() {
             </div>
 
             {/* Organizational Experience */}
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <i className="ri-team-fill text-pink-600"></i> Organizational
                 Experience
@@ -189,12 +190,7 @@ function App() {
 
       {/* {PROJECT} */}
       <div className="Project mt-32 py-10" id="project">
-        <h1
-          className="text-center text-4xl font-bold mb-2"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
+        <h1 className="text-center text-4xl font-bold mb-2">
           Project
         </h1>
         {/* <p
@@ -212,10 +208,7 @@ function App() {
             <div
               key={project.id}
               className="p-4 bg-zinc-800 rounded-2xl"
-              data-aos="zoom-in"
-              data-aos-duration="800"
-              data-aos-delay={index * 200}
-              data-aos-once="true"
+              
             >
               <img src={project.gambar} alt="Project Image" className="rounded-md" />
               <div>
@@ -247,13 +240,13 @@ function App() {
 
       {/* {Contact} */}
       <div className="contact mt-32 sm:p-10 p-0" id="contact">
-        <h1 className="text-center text-4xl mb-2 font-bold" data-aos="fade-up" data-aos-duration="1000">Contact</h1>
-        <p className="text-center text-base/loose opacity-50 mb-10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true"></p>
+        <h1 className="text-center text-4xl mb-2 font-bold">Contact</h1>
+        <p className="text-center text-base/loose opacity-50 mb-10" ></p>
         <form
           action="https://formsubmit.co/frandysoesanto2@gmail.com"
           method="POST"
           className=" bg-zinc-800 p-10 sm:w-fit mx-auto rounded-2xl w-full"
-          autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+          autoComplete="off" 
         >
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
