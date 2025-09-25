@@ -189,39 +189,60 @@ function App() {
 
       {/* {PROJECT} */}
       <div className="Project mt-32 py-10" id="project">
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+        <h1
+          className="text-center text-4xl font-bold mb-2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Project
+        </h1>
+        {/* <p
+          className="text-base/loose text-center opacity-50"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
           Berikut ini beberapa project yang telah saya buat
-        </p>
+        </p> */}
+
         <div className="project-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-          {listProject.map((project) => (
-            <div className="p-4 bg-zinc-800 rounded-2xl"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay={project.dad} data-aos-once="true" key={project.id}>
-              <img src={project.gambar} alt="Project Image" />
+          {listProject.map((project, index) => (
+            <div
+              key={project.id}
+              className="p-4 bg-zinc-800 rounded-2xl"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay={index * 200}
+              data-aos-once="true"
+            >
+              <img src={project.gambar} alt="Project Image" className="rounded-md" />
               <div>
-                <h1 className="text-2xl font-bold my-4 ">{project.nama}</h1>
+                <h1 className="text-2xl font-bold my-4">{project.nama}</h1>
                 <p className="text-base/loose mb-4">{project.desk}</p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tools.map((tool, index) => (
+                  {project.tools.map((tool, i) => (
                     <p
+                      key={i}
                       className="px-3 border border-zinc-500 bg-zinc-500 rounded-md"
-                      key={index}
                     >
                       {tool}
                     </p>
-                  ))}
-                </div>
+                ))}
+              </div>
                 <div className="mt-8 text-center">
                   <a
                     href={project.link}
-                    className="bg-pink-600 p-3 rounded-lg block border border-red-700"
-                  >
+                    className="bg-pink-600 p-3 rounded-lg block border border-red-700 hover:bg-pink-500 transition"
+                    target="_blank" >
                     Lihat Website
                   </a>
                 </div>
               </div>
             </div>
           ))}
-        </div>
+        </div>    
       </div>
 
       {/* {Contact} */}
