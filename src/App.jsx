@@ -18,32 +18,26 @@ function App() {
             <q>Quotes ini nanti diapus. 😘</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">
-            Halo, Saya Frandy Soesanto
+            Hello, I’m Frandy Soesanto 👋  
           </h1>
           <p className=" text-base/loose mb-6 opacity-55">
-            I’m Frandy Soesanto, a Computer Science student at BINUS University
-            with strong interests in Web & Mobile Development and Database
-            Management. I have hands-on experience using Laravel, Java, SQL,
-            MongoDB, React, and React Native to build applications that are both
-            functional and user-friendly. Through my involvement in various
-            campus organizations, I’ve developed key soft skills such as
-            communication, teamwork, and leadership, which support my technical
-            abilities. I’m passionate about continuous learning, exploring new
-            technologies, and applying best practices to deliver impactful
-            solutions. I’m always excited to collaborate, solve problems, and
-            contribute to creating meaningful digital products. 🚀
+            I’m a Computer Science student at BINUS University with a strong passion for Web, Mobile, and Database Development.  
+            I have hands-on experience with Laravel, Java, SQL, MongoDB, React, and React Native to build functional, user-friendly applications.  
+            Through campus organizations, I’ve developed skills in communication, teamwork, and leadership, which complement my technical expertise.  
+            I believe in continuous learning and enjoy exploring new technologies to create impactful digital solutions. 🚀
+
           </p>
           <div className="flex items-center gap-5">
             <a
               href="#"
-              className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-500"
+              className="bg-pink-600 p-4 rounded-2xl hover:bg-pink-500"
             >
               Download CV <i className="ri-download-fill ri-lg"></i>
             </a>
 
             <a
               href="#project"
-              className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-500"
+              className="bg-pink-600 p-4 rounded-2xl hover:bg-pink-500"
             >
               Lihat Proyek
             </a>
@@ -58,13 +52,13 @@ function App() {
 
       {/* {Resume} */}
       <div className="about mt-32 py-10" id="resume">
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000">
           <h1 className="text-center text-4xl font-bold mb-18">Resume</h1>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 px-1">
             {/* Contact Card */}
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <i className="ri-contacts-fill text-violet-400"></i> Contact
+                <i className="ri-contacts-fill text-pink-600"></i> Contact
               </h2>
               <ul className="space-y-2 text-base/loose">
                 <li>
@@ -80,9 +74,9 @@ function App() {
             </div>
 
             {/* Education Card */}
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <i className="ri-graduation-cap-fill text-violet-400"></i>{" "}
+                <i className="ri-graduation-cap-fill text-pink-600"></i>{" "}
                 Education
               </h2>
               <div className="space-y-4">
@@ -100,9 +94,9 @@ function App() {
             </div>
 
             {/* Experience Card */}
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <i className="ri-briefcase-fill text-violet-400"></i> Internship
+                <i className="ri-briefcase-fill text-pink-600"></i> Internship
                 Experience
               </h2>
               <div className="space-y-4">
@@ -118,9 +112,9 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <i className="ri-code-s-slash-line text-violet-400"></i> Skills
+                <i className="ri-code-s-slash-line text-pink-600"></i> Skills
               </h2>
               <div className="flex flex-wrap gap-2">
                 {[
@@ -147,9 +141,9 @@ function App() {
             </div>
 
             {/* Organizational Experience */}
-            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+            <div className="bg-zinc-800 p-6 rounded-2xl shadow-md"data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <i className="ri-team-fill text-violet-400"></i> Organizational
+                <i className="ri-team-fill text-pink-600"></i> Organizational
                 Experience
               </h2>
               <div className="space-y-4">
@@ -195,13 +189,13 @@ function App() {
 
       {/* {PROJECT} */}
       <div className="Project mt-32 py-10" id="project">
-        <h1 className="text-center text-4xl font-bold mb-2">Project</h1>
-        <p className="text-base/loose text-center opacity-50">
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
           Berikut ini beberapa project yang telah saya buat
         </p>
         <div className="project-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProject.map((project) => (
-            <div className="p-4 bg-zinc-800 rounded-2xl" key={project.id}>
+            <div className="p-4 bg-zinc-800 rounded-2xl"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay={project.dad} data-aos-once="true" key={project.id}>
               <img src={project.gambar} alt="Project Image" />
               <div>
                 <h1 className="text-2xl font-bold my-4 ">{project.nama}</h1>
@@ -219,7 +213,7 @@ function App() {
                 <div className="mt-8 text-center">
                   <a
                     href={project.link}
-                    className="bg-violet-700 p-3 rounded-lg block border-red-700"
+                    className="bg-pink-600 p-3 rounded-lg block border border-red-700"
                   >
                     Lihat Website
                   </a>
@@ -232,13 +226,13 @@ function App() {
 
       {/* {Contact} */}
       <div className="contact mt-32 sm:p-10 p-0" id="contact">
-        <h1 className="text-center text-4xl mb-2 font-bold">Contact</h1>
-        <p className="text-center text-base/loose opacity-50 mb-10"></p>
+        <h1 className="text-center text-4xl mb-2 font-bold" data-aos="fade-up" data-aos-duration="1000">Contact</h1>
+        <p className="text-center text-base/loose opacity-50 mb-10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true"></p>
         <form
           action="https://formsubmit.co/frandysoesanto2@gmail.com"
           method="POST"
           className=" bg-zinc-800 p-10 sm:w-fit mx-auto rounded-2xl w-full"
-          autoComplete="off"
+          autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
         >
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
@@ -277,7 +271,7 @@ function App() {
             <div className="flex justify-center w-full">
               <button
                 type="submit"
-                className="p-2 rounded-2xl bg-violet-700 block w-full font-bold"
+                className="p-2 rounded-2xl bg-pink-600 block w-full font-bold"
               >
                 Submit
               </button>
