@@ -121,7 +121,7 @@ function App() {
                 {[
                   "Laravel",
                   "Java",
-                  "C",
+                  "C/C++",
                   "SQL",
                   "MySQL",
                   "MongoDB",
@@ -129,6 +129,15 @@ function App() {
                   "React Native",
                   "Git",
                   "Figma",
+                  "Sequence Diagram",
+                  "ERD",
+                  "Use Case Diagram",
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "Phyton",
+                  "Tailwind CSS",
+                  "Class Diagram",
                   "and more",
                 ].map((skill, index) => (
                   <span
@@ -155,18 +164,18 @@ function App() {
                   <p className="text-sm opacity-70">Mar 2024 – Present</p>
                 </div>
                 <div>
-                  <p className="font-semibold">Staff – HISHOT 2024 (HIMTI)</p>
+                  <p className="font-semibold"> Staff of Equipment, Transportation & Consumption – HISHOT 2024 (HIMTI)</p>
                   <p className="text-sm opacity-70">Jun 2024 – Present</p>
                 </div>
                 <div>
                   <p className="font-semibold">
-                    Member – Week of Welcoming (WOW) 2024
+                    Member of Binus Futsal – Week of Welcoming (WOW) 2024
                   </p>
                   <p className="text-sm opacity-70">Aug 26 – 31, 2024</p>
                 </div>
                 <div>
                   <p className="font-semibold">
-                    Manager of Sponsorship – Kemanggisan Super League
+                    Staff of Sponsorship – Kemanggisan Super League
                   </p>
                   <p className="text-sm opacity-70">Sep 2024</p>
                 </div>

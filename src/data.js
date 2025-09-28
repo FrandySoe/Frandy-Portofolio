@@ -127,7 +127,7 @@ export const listProject = [
     gambar: Project3,
     nama: "Asphalt 9",
     desk: "Asphalt 9 Website Clone A static website that replicates the look and core features of the official Asphalt 9 site. Built with HTML, CSS, and JavaScript, it showcases game information, a car gallery, trailers, and responsive interactive navigation.",
-    tools: ["HTML", "JS", "CSS"],
+    tools: ["HTML", "JavaScript", "CSS"],
     dad: "400",
     link: "https://frandysoe.github.io/Asphalt/",
   },
