@@ -106,8 +106,7 @@ function App() {
                     Data Entry Intern – PT Agusindo
                   </p>
                   <p className="text-sm opacity-70">
-                    Input and monitored monthly iuran data per ruko block (paid
-                    vs unpaid).
+                    Accurately enter and update monthly fees data for commercial real estate units, ensuring up-to-date records for financial management.
                   </p>
                 </div>
               </div>
