@@ -16,7 +16,7 @@ function App() {
               alt="Hero Image"
               className="w-10 rounded-md"
             />
-            <q>Quotes ini nanti diapus. 😘</q>
+            <q>Striving to learn and become better. 🔥</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">
             Hello, I’m Frandy Soesanto 👋  
