@@ -164,7 +164,7 @@ function App() {
                 </div>
                 <div>
                   <p className="font-semibold"> Staff of Equipment, Transportation & Consumption – HISHOT 2024 (HIMTI)</p>
-                  <p className="text-sm opacity-70">Jun 2024 – Present</p>
+                  <p className="text-sm opacity-70">Jun 2024</p>
                 </div>
                 <div>
                   <p className="font-semibold">
